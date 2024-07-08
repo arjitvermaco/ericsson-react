@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+//its a simple js function that returns a JSX (html)
+import Header from "./components/Header";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let appName = "My React App";
+    let createdBy = "Arjit"
+    function handleClick(event){
+        console.log("Button Clicked")
+        console.log(event)
+    }
+    const isLogged = false;
+    
+    return (
+        <>
+          <Header name={appName} createdBy={createdBy}/>
+          <Body/>
+          <Footer/>
+
+          <button onMouseEnter={(event)=>{handleClick(event)}}>Click Me</button>
+        </>
+
+    )
 }
 
 export default App;
