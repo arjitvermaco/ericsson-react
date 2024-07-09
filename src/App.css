@@ -1,0 +1,15 @@
+body {
+    background-color: #282c34;
+    color: white;
+    padding: 40px;
+    font-family: Sans-Serif;
+    text-align: center;
+}
+
+.bigRed {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

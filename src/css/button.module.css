@@ -1,0 +1,15 @@
+.bigRed {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bigBlue{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

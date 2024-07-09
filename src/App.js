@@ -1,26 +1,13 @@
-//its a simple js function that returns a JSX (html)
-import Header from "./components/Header";
-import Body from "./components/Body";
-import Footer from "./components/Footer";
-function App() {
-    let appName = "My React App";
-    let createdBy = "Arjit"
-    function handleClick(event){
-        console.log("Button Clicked")
-        console.log(event)
-    }
-    const isLogged = false;
-    
-    return (
-        <>
-          <Header name={appName} createdBy={createdBy}/>
-          <Body/>
-          <Footer/>
+import React from 'react'
+import StateHook from './components/StateHook'
+import Body from './components/Body'
+import SimpleForm from './components/SimpleForm'
+import TodoApp from './components/TodoApp'
 
-          <button onMouseEnter={(event)=>{handleClick(event)}}>Click Me</button>
-        </>
-
-    )
+export default function App() {
+  return (
+    <div>
+     <TodoApp/>
+    </div>
+  )
 }
-
-export default App;
